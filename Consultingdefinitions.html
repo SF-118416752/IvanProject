@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Blockchain {background-color: grey;}
+#Autonomousthings {background-color: grey;}
+#Immersiveexperience {background-color: grey;}
+
+style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+</style>
+        <title>Consulting Services</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <button onclick="goBack()">Go Back</button>
+
+
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+
+
+
+        <button class="tablink" onclick="openPage('Blockchain', this, 'grey')">Blockchain</button>
+        <button class="tablink" onclick="openPage('Autonomousthings', this, 'grey')" id="defaultOpen">Autonomous Things</button>
+        <button class="tablink" onclick="openPage('Immersiveexperience', this, 'grey')">Immersive Experience</button>
+
+
+<div id="Blockchain" class="tabcontent">
+  <h3>Blockchain</h3>
+  <p>Blockchain is a type of distributed ledger for maintaining a permanent and tamper-proof record of transactional data. -  <a href="https://searchcio.techtarget.com/definition/blockchain"> Tech Target</a> </p>
+      
+  <p>From a cruising altitude, a blockchain might not look that different from things you’re familiar with, say Wikipedia. - <a href="https://www.coindesk.com/information/what-is-blockchain-technology">Coin Desk</a> </p>
+ 
+  
+  <p> <iframe width="560" height="315" src="https://www.youtube.com/embed/SSo_EIwHSd4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  <br> </br>
+  <p>The very primitive form of the blockchain was the hash tree, also known as a Merkle tree. This data structure was patented by Ralph Merkle in 1979, and functioned by verifying and handling data between computer systems. In a peer-to-peer network of computers, validating data was important to make sure nothing was altered or changed during transfer. It also helped to ensure that false data was not sent. In essence, it is used to maintain and prove the integrity of data being shared. - <a href="https://www.investinblockchain.com/what-is-blockchain-technology/">Invest in Blockchain</a> </p>
+  
+</div>
+
+<div id="Autonomousthings" class="tabcontent">
+  <h3>Autonomous Things</h3>
+  <p>The term “autonomous things” is being used more and more in the technology world to talk about phenomena powered by the latest advancements in artificial intelligence and machine learning.- <a href="https://www.techopedia.com/definition/33723/autonomous-things">Techopedia</a> </p> 
+  
+  <p>Self-navigating drones are the first AuT technology in (limited) deployment. It is expected that the first mass-deployment of AuT technologies will be the autonomous car, generally expected to be available around 2020.- <a href="https://www.revolvy.com/page/Autonomous-things">Revolvy</a>   </p>
+  
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/PQv2-TUMKPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+><br></br> 
+<p>History of Autonomous cars. In GM’s 1939 exhibit, Norman Bel Geddes created the first self-driving car, which was an electric vehicle guided by radio-controlled electromagnetic fields generated with magnetized metal spikes embedded in the roadway. By 1958, General Motors had made this concept a reality. The car’s front end was embedded with sensors called pick-up coils that could detect the current flowing through a wire embedded in the road. The current could be manipulated to tell the vehicle to move the steering wheel left or right.- <a href="https://www.titlemax.com/resources/history-of-the-autonomous-car/">Titlemax</a> </p>
+</div>
+<div id="Immersiveexperience" class="tabcontent">
+  <h3>Immersive Experience</h3>
+  <p>An immersive experience is an illusory environment that completely surrounds you such that you feel that you are inside it and part of it. - <a href="https://simplicable.com/new/immersive-experience">Simplicable</a> </p>
+  <p>Virtual reality (VR) is a generic term for content that can be played by digital devices, such as HMDs (head-mounted displays) or smartphones (mobile VR). This could be a linear film recorded with the help of a 360-degree camera, or an interactive 3D simulation, such as those used for gaming, which allow the user to immerse themselves in what’s happening.<a href="https://www.thinkwithgoogle.com/intl/en-cee/insights-trends/industry-perspectives/vr-ar-mr-and-what-does-immersion-actually-mean/">Think with Google</a> </p>
+<div class="row">
+  <div class="column">
+    <img src="img/immersive1.jpg" alt="Immersive1" height="300" width="400">
+  </div>
+  <div class="column">
+    <img src="img/immersive2.jpg" alt="Immersive2" height="300" width="400">
+  </div>
+  <div class="column">
+    <img src="img/immersive3.jpeg" alt="Immersive3" height="300" width="400">
+  </div>
+    <p>The three pillars of immersive experiences are visual quality, sound quality, and intuitive interactions. Full immersion can only be achieved by simultaneously focusing on these pillars.<a href="https://www.qualcomm.com/invention/cognitive-technologies/immersive-experiences">Qualcomm</a>  </p>
+</div>
+</div>
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+       
+
+    </body>
+</html>
+
