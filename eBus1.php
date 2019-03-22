@@ -47,24 +47,24 @@ function goBack() {
 
         <div class="form">
             <form name="intCalc" method="post" action="eBus2.php">
-                  <h1>Shop Calculator</h1>
+                  <h1>Consulting Services</h1>
                 <hr />
                 <center>
                     <table cellspacing="10">
                         <tr>
-                            <td><b>Beverage</b></td>
+                            <td><b>Select a Consulting Service:</b></td>
                         </tr>
                          <tr>
-                            <td>Coca-Cola</td>
-                            <td><input type="radio" id="CocaCola" name="rdoGroup" value="1" /></td>
+                            <td>Blockchain @ $1000</td>
+                            <td><input type="radio" id="Blockchain" name="rdoGroup" value="1000" /></td>
                         </tr>
                         <tr>
-                            <td>Sprite</td>
-                            <td><input type="radio" id="Sprite" name="rdoGroup" value="5" /></td>
+                            <td>Autonomous Things @ $2000</td>
+                            <td><input type="radio" id="Autonomousthings" name="rdoGroup" value="2000" /></td>
                         </tr>
                         <tr>
-                            <td>Fanta</td>
-                            <td><input type="radio" id="Fanta" name="rdoGroup" value="30" /></td>
+                            <td>Immersive Experience @ $3000</td>
+                            <td><input type="radio" id="Immersiveexperience" name="rdoGroup" value="3000" /></td>
                         </tr>
                     </table>
                 </center>
@@ -81,11 +81,11 @@ function goBack() {
                             <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
                         </tr>
                         <tr>
-                            <td>Discount @30%</td>
+                            <td>Discount @ 30%</td>
                             <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
                         </tr>
                         <tr>
-                            <td>+VAT @40%</td>
+                            <td>+VAT @ 40%</td>
                             <td><input type="text" id="txtVat" name="txtVat" readonly /></td>
                         </tr>
                         <tr>
@@ -107,24 +107,24 @@ function goBack() {
             function calcSub() {
                 //Assigning variables to the values
                 var subAmount = parseFloat(document.getElementById('txtSubTot').value);
-                var CocaCola = parseFloat(document.getElementById('CocaCola').value);
-                var Sprite = parseFloat(document.getElementById('Sprite').value);
-                var Fanta = parseFloat(document.getElementById('Fanta').value);
+                var Blockchain = parseFloat(document.getElementById('Blockchain').value);
+                var Autonomousthings = parseFloat(document.getElementById('Autonomousthings').value);
+                var Immersiveexperience = parseFloat(document.getElementById('Immersiveexperience').value);
                
                 //If radio buttons are clicked, values are assigned
-                if (document.getElementById('CocaCola').checked) {
-                    document.intCalc.txtSubTot.value = CocaCola;
-                    subAmount = CocaCola;
+                if (document.getElementById('Blockchain').checked) {
+                    document.intCalc.txtSubTot.value = Blockchain;
+                    subAmount = Blockchain;
                     calculation(subAmount);
                 }
-                else if (document.getElementById('Sprite').checked) {
-                    document.intCalc.txtSubTot.value = Sprite;
-                    subAmount = Sprite;
+                else if (document.getElementById('Autonomousthings').checked) {
+                    document.intCalc.txtSubTot.value = Autonomousthings;
+                    subAmount = Autonomousthings;
                     calculation(subAmount);
             }
-            else if (document.getElementById('Fanta').checked) {
-                    document.intCalc.txtSubTot.value = Fanta;
-                    subAmount = Fanta;
+            else if (document.getElementById('Immersiveexperience').checked) {
+                    document.intCalc.txtSubTot.value = Immersiveexperience;
+                    subAmount = Immersiveexperience;
                     calculation(subAmount);
                 }
             }
@@ -132,8 +132,8 @@ function goBack() {
             //Function for calculating  the values
             function calculation(parmSTotal) {
                 var subTotal = parseFloat(parmSTotal);
-                var discCalc = parseFloat(subTotal * .30);
-                var vatCalc = parseFloat(subTotal * .40);
+                var discCalc = parseFloat(subTotal * .10);
+                var vatCalc = parseFloat(subTotal * .20);
                 var total = parseFloat(subTotal - discCalc + vatCalc);
                
                 //Inserting them into the correct fields

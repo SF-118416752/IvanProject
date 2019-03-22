@@ -26,16 +26,24 @@
     </head>
     <body> 
         <!-- //Starting the session to get the session variable from last page--> 
+    <center>
+        <h1>Purhase Receipt</h1>
         <?php 
         
         session_start(); 
         $totalValue = $_POST['txtTotal'];
-        echo "The name is :".$fullNameValue.".";
+        $fullNameValue = $_POST['txtName'];
+        $Number = $_POST['txtNum'];
+        echo "Name:".$fullNameValue.".";
+        echo "<br></br>";    
+        echo "Total Price: $".$totalValue.".";     
         echo "<br></br>";
+        echo "Phone Number: ".$Number.".";
         
-        echo "the total value is ".$totalValue.".";
+        
+        
         ?> 
-        
+    </center>
     </body> 
 </html>
 

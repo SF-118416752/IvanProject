@@ -2,12 +2,14 @@
 session_start();
 $fullNameValue = "";
 $totalValue = "";
+$Number = "";
 /*
  * Creat a session variable for th e mobile number
  */
 $totalValue = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
 $_SESSION['txtTotal'] = $totalValue;
+$_SESSION['txtNum'] = $Number
 /**
  * Allocate the mobile number session variable to a text box.
  */
@@ -56,7 +58,7 @@ $_SESSION['txtTotal'] = $totalValue;
                         </tr>
                         <tr>
                             <td>Phone Number</td>
-                            <td><input type="text" id="txtNum" name="txtNum" pattern="[0-9] {3}-[0-9]{3}-[0-9]{4}" 
+                            <td><input type="text" id="txtNum" name="txtNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
                                        required>
                                 <span class="note">format: 123-456-7890</span>                
                                        
@@ -64,7 +66,7 @@ $_SESSION['txtTotal'] = $totalValue;
                         </tr>
                         <tr>
                             <td>Password</td>
-                            <td><input type="text" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter and at least 8 or more characters" required></td>
+                            <td><input type="Password" id="psw" name="psw" pattern="[0-9]{4}" title="Must contain four numbers" required></td>
                         </tr>
                         <tr>
                            
