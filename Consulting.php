@@ -70,7 +70,7 @@ img {
   
   <a href="index.php">Home</a>
   <a href="consultingdefinitions.html">About Consulting</a>
-  <a href="ebus1.php">Services</a>
+  <a href="eBus1.php">Services</a>
  
 </div>
 
